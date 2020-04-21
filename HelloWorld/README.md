@@ -30,8 +30,7 @@ npm run serve
 ```
 
 打开网页结果
-![](imgs\demo.jpg)
-
+![demo](https://user-images.githubusercontent.com/36192496/79883658-c9f32400-8426-11ea-8665-5c8d081312ee.jpg)
 
 
 ## 第一步创建Django项目
