@@ -1,6 +1,33 @@
 # VUE+DRF
 Vue.js和Django Rest Framework的前后端分离开发的一个HelloWorld
 
+
+## 启动
+
+后端项目使用PyCharm开发，前端项目使用WebStorm开发。
+
+首先启动后台项目切换到filmApi文件夹下面，打开终端输入
+```
+首先确保python使用的3.8
+
+pip install -r requirements.txt # 安装依赖
+
+python manage.py runserver
+```
+
+前端项目启动需要npm，相关内容百度
+切换到film_online下面,打开终端输入下面这两个句启动前端
+```
+npm install
+
+npm run serve
+```
+
+打开网页结果
+![](imgs\demo.jpg)
+
+
+
 ## 第一步创建Django项目
 与一般的Django项目创建不同的是在setting中需要添加上`rest_framework`
 
