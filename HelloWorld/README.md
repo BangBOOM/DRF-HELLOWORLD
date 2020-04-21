@@ -1,6 +1,12 @@
 # VUE+DRF
 Vue.js和Django Rest Framework的前后端分离开发的一个HelloWorld
 
+主要功能就是从后端获取电影信息展示在前端页面
+
+## 文件介绍
+
++ filmApi是后端部分基于Python3.8,django3.0,djangorestframework3.11开发，开发平台是Pycharm。
++ film_online是前端部分，基于vue4.x，开发平台是webstorm。
 
 ## 启动
 
