@@ -16,7 +16,7 @@ Vue.js和Django Rest Framework的前后端分离开发的一个HelloWorld
 ```
 首先确保python使用的3.8
 
-pip install -r requirements.txt # 安装依赖
+依赖主要是需要安装django最新版本
 
 python manage.py runserver
 ```
