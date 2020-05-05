@@ -16,7 +16,7 @@ Vue.js和Django Rest Framework的前后端分离开发的一个HelloWorld
 ## 文件介绍
 
 + filmApi是后端部分基于Python3.8,django3.0,djangorestframework3.11开发，开发平台是Pycharm。
-+ film_online是前端部分，基于vue4.x，开发平台是webstorm。
++ film_online是前端部分，基于vue，开发平台是webstorm。
 
 ## 启动
 
