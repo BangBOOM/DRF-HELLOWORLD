@@ -6,3 +6,6 @@
 
 2. 2020/4/21
    + 添加HelloWorld文件是一个django和vue前后端分离开发的demo，只有电影展示功能。
+
+3. 2020/5/6
+   + HelloWorld中添加用户注册登录的API，电影信息的获取需要token认证。
