@@ -6,6 +6,8 @@ app_name='movie'
 
 router=DefaultRouter()
 router.register(r'movie',views.MovieViewSet)
+router.register(r'login',views.LogInViewSet)
+router.register(r'register',views.RegisterViewSet)
 
 urlpatterns=[
     url(r'^api/',include(router.urls)),

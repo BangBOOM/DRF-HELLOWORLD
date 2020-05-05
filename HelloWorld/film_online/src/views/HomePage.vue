@@ -39,7 +39,11 @@
             showMoviesFromDRF() {
                 const obj = this;
                 const url = "http://127.0.0.1:8000/movie/api/movie";
-                this.$http.get(url).then(
+                this.$http.get(url,{
+                    params:{
+                        token:'7ce0b76ac67fe23d87b68565a6258d62'
+                    }
+                }).then(
                     (response) => {
                         obj.movie_list = JSON.parse(response.request.response);
                     }

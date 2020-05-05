@@ -26,3 +26,18 @@ class Movie(models.Model):
 
     def __str__(self):
         return self.name
+
+class User(models.Model):
+    user_id=models.AutoField(primary_key=True)
+    username=models.CharField(max_length=32)
+    password=models.CharField(max_length=32)
+
+    class Meta:
+        verbose_name="user"
+
+class UserToken(models.Model):
+    username=models.OneToOneField(to='User',on_delete=models.CASCADE)
+    token=models.CharField(max_length=60)
+
+    class Meta:
+        verbose_name="user_token"
