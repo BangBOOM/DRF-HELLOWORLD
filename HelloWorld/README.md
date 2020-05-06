@@ -2,14 +2,18 @@
 Vue.js和Django Rest Framework的前后端分离开发的一个HelloWorld
 
 
-## 功能
+## API实现
 + 2020/4/25
-  + 电影信息浏览，后端API和前端界面
+  + 电影信息获取API
 
 + 2020/5/6
-  + 添加用户注册，用户登录的后台api，基于token实现，未实现前端界面
-  + 获取电影信息需要token认证 
+  + 添加用户注册，用户登录
+  + 获取电影信息接口添加认证
+  + 实现用户评论部分的API，
 
+## 前端部分
++ 2020/4/25
+  + 电影信息浏览界面
 
 
 
@@ -18,7 +22,7 @@ Vue.js和Django Rest Framework的前后端分离开发的一个HelloWorld
 + filmApi是后端部分基于Python3.8,django3.0,djangorestframework3.11开发，开发平台是Pycharm。
 + film_online是前端部分，基于vue，开发平台是webstorm。
 
-## 启动
+## 项目使用
 
 后端项目使用PyCharm开发，前端项目使用WebStorm开发。
 
