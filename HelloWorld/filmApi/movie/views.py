@@ -1,3 +1,4 @@
+from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from movie.serializers import *
@@ -45,6 +46,17 @@ class MovieViewSet(viewsets.ModelViewSet):
     queryset = Movie.objects.all()  # 获取数据库中的所有内容
     serializer_class = MovieSerializer  # 序列化
 
+    @action(methods=['GET'], detail=False)
+    def search(self, request):
+        '''
+        根据名字查找电影
+        :param request:
+        :return:
+        '''
+        movie_name = request.query_params.get('movie_name', None)
+        queryset = Movie.objects.filter(name__contains=movie_name)
+        serializer = self.serializer_class(queryset, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
 class CommentViewSet(viewsets.ModelViewSet):
     queryset = Comment.objects.all()
