@@ -10,3 +10,6 @@
 3. 2020/5/6
    + HelloWorld中添加用户注册登录的API，电影信息的获取需要token认证。
    + HelloWorld中添加用户评论电影的接口
+
+4. 2020/5/7
+   + HelloWorld中添加根据电影名称搜索电影的API
