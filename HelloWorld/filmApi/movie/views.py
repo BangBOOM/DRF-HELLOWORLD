@@ -61,10 +61,11 @@ class MovieViewSet(viewsets.ModelViewSet):
 class CommentViewSet(viewsets.ModelViewSet):
     queryset = Comment.objects.all()
     serializer_class = CommentSerializers
-
+    
     def create(self, request, *args, **kwargs):
         data = request.data
         res = CommentSerializers(data=data)
         if res.is_valid():
-            res.save()
+            res.save(user_id=request.user)
         return Response(res.errors)
+

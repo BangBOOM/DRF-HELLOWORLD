@@ -72,11 +72,22 @@ class CommentSerializers(serializers.ModelSerializer):
 
     def save(self, **kwargs):
         validated_data = dict(
-            list(self.validated_data.items())
+            list(self.validated_data.items()) + list(kwargs.items())
         )
-        token = validated_data['token']
-        user_obj = UserToken.objects.filter(token=token).first()
         del validated_data['token']
-        validated_data['user_id'] = user_obj.username
         self.instance = self.create(validated_data)
         return self.instance
+
+
+class OrderSerializer(serializers.ModelSerializer):
+    token = serializers.CharField(max_length=60)
+
+    class Meta:
+        model = Order
+        fields = ('schedule_id', 'token', 'order_seat_info', 'pay_type')
+
+    # 用户购买电影票
+    def save(self, **kwargs):
+        pass
+
+    # 用户删除订单

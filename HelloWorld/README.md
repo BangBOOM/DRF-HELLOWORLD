@@ -13,6 +13,7 @@ Vue.js和Django Rest Framework的前后端分离开发的一个HelloWorld
 
 + 2020/5/8
   + 添加根据电影名称搜索电影的API
+  + 基本完善数据库的建立
 
 ## 前端部分
 + 2020/4/25
