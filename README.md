@@ -1,4 +1,1 @@
-# OnlineCinema
-线上电影票出售系统
-
-+ 项目文件都在FilmSys中
+这个一个DRF+VUE前后端分离开发的一个Demo
